@@ -4,13 +4,15 @@ public class Main {
 
         Author tolstoy = new Author("Лев", "Толстой");
         Book book1 = new Book("Анна Каренина", tolstoy, 1960);
-        System.out.println(book1.getTitle() + " " + book1.getAuthor().getName() + " " + book1.getAuthor().getLastName() + " " + book1.getPublicationYear());
+        System.out.println(book1);
         book1.setPublicationYear(1980);
-        System.out.println(book1.getTitle() + " " + book1.getAuthor().getName() + " " + book1.getAuthor().getLastName() + " " + book1.getPublicationYear());
+        System.out.println(book1);
 
         Author pushkin = new Author("Александр", "Пушкин");
         Book book2 = new Book("Евгений Онегин", pushkin, 1973);
-        System.out.println(book2.getTitle() + " " + book2.getAuthor().getName() + " " + book2.getAuthor().getLastName() + " " + book2.getPublicationYear());
+        System.out.println(book2);
+
+        System.out.println(book1.equals(book2));
 
     }
 }
